@@ -15,14 +15,19 @@ export const StyledHeader = styled.div<any>`
       display: flex;
       justify-content: center ;
       align-items: center;
+        input,button{
+          background-color:var(--search-bg-color) !important;
+          color:var(--text-color) !important;
+        }
       .header-toolbar{
         display: flex;
         margin-left:20px;
+        
         .header-toolbar-item{
           height:50px;
           width:50px;
           border-radius:50%;
-          background-color:var(--toolbar-bg-color);
+          background-color:var(--search-bg-color);
           display: flex;
           justify-content:center ;
           align-items:center ;
@@ -77,11 +82,17 @@ export const CustomSearchWrapper = styled.div<any>`
 .custom-search .ant-input-affix-wrapper {
   height:48px;
   border-radius: 30px !important; 
+  border:none;
   background-color:var(--search-bg-color);
   font-size:14px;
   font-weight:600;
   position:relative;
   padding: 0 50px;
+}
+.ant-input::placeholder{
+
+    color:var(--text-color) !important;
+
 }
 .ant-input-group-addon{
   background-color:var(--search-bg-color);

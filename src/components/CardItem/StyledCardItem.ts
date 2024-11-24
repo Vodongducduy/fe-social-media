@@ -20,8 +20,8 @@ const StyledCardItem = styled.div<CardItemProps>`
 
                 background: linear-gradient(
                     to bottom right, 
-                    ${props => props.color1 || '#ffffff'}, 
-                    ${props => props.color2 || '#ffffff'}
+                    ${props => props.color1 || "var(--header-bg-color)"}, 
+                    ${props => props.color2 || "var(--header-bg-color)"}
                 );
                 display: flex;
                 justify-content:center ;

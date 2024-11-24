@@ -2,13 +2,17 @@ import styled from "styled-components";
 
 
 export const StyledNewFeed = styled.div<any>`
-    background-color:#fff;
+    background-color:var(--header-bg-color) !important;;
     margin-top:20px;
     border-radius:20px;
     padding-bottom:20px;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.05) !important;
     .newfeed-header{
         padding:20px 20px 10px 20px;
+        span{
+            color:var(--text-color);
+        }
+        
     }
     .newfeed-content{
         padding:0 20px;
@@ -18,7 +22,7 @@ export const StyledNewFeed = styled.div<any>`
         line-height:26px;
         margin-bottom:10px;
         .see-more{
-            color:blue;
+            color:#1f6dea;
             cursor: pointer;
             display: inline-block;
         }
@@ -36,7 +40,7 @@ export const StyledNewFeed = styled.div<any>`
         align-items:center ;
         span{
             font-weight:500;
-            color:#000;
+            color:var(--text-color);
             font-size:13px;
         }
         .newfeed-action-like

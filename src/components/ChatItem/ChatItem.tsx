@@ -11,7 +11,7 @@ const ChatItem: React.FC<Partial<ChatItemProps>> = (props) => {
                             <img alt="chat-avatar" src={fullProps.srcImg}></img>
                         </div>
                         <div className="personal-info">
-                            <span>{fullProps.name}</span>
+                            <span className="name-info">{fullProps.name}</span>
                             <span className={`add-info ${fullProps.addinfo ==="" ? "hidden" : ""}`}>{fullProps.addinfo}</span>
                         </div>
                         

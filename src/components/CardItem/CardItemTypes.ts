@@ -24,8 +24,8 @@ export interface CardItemProps {
     fontWeight: "500",
     lineHeight: "20px",
     mainColor:"#ccc",
-    color1: "000000",
-    color2: "000000",
+    color1: "var(--header-bg-color)", // Sử dụng biến CSS
+    color2: "var(--header-bg-color)", // Sử dụng biến CSS
     svgHeight:"20px"
   }
   

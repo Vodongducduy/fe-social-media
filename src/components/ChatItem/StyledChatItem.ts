@@ -9,6 +9,9 @@ const StyledChatItem = styled.div<ChatItemProps>`
         .personal-info{
             display:flex;
             flex-direction:column;
+            span.name-info{
+                color:var(--text-color)
+            }
         }
         .add-info{
             color:#bcc2c9;

@@ -15,7 +15,26 @@ import avatar from "../../assets/img/avatar.jpg";
 const Header:React.FC<Partial<any>> = (props) => {
     const navigate = useNavigate();
     const location = useLocation(); // Lấy đường dẫn hiện tại
-
+    const [isDarkMode, setIsDarkMode] = useState(false);
+    const setDarkMode = () => {
+        const body = document.querySelector('body');
+        if (body) {
+            body.setAttribute('data-mode', 'dark');
+        }
+    };
+      const setLightMode =()=>{
+        const body = document.querySelector('body');
+        if (body) {
+            body.setAttribute('data-mode', 'light');
+        }
+    }
+    const handleToggleDarkMode = () => {
+        setIsDarkMode(!isDarkMode);
+        if(!isDarkMode) 
+        setDarkMode();
+        else
+        setLightMode();
+      };
     // Hàm kiểm tra nếu đường dẫn hiện tại khớp với `to`
     const isActive = (path: string) => location.pathname.startsWith(path);
 
@@ -77,7 +96,7 @@ const Header:React.FC<Partial<any>> = (props) => {
                 <div className="icon-header">
                     <Chat />
                 </div>
-                <div className="icon-header">
+                <div className="icon-header" onClick={handleToggleDarkMode}>
                     <Moon />
                 </div>
                 <Link to="#" className="btn-right-header ">

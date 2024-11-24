@@ -5,7 +5,7 @@ const StyledCard = styled.div<CardProps>`
         flex-direction: column;
         border-radius:  ${props => props.radius} ;
         position: relative;
-        background-color:white;
+        background-color:var(--header-bg-color);
         margin:12px;
         box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
         padding-bottom:10px;

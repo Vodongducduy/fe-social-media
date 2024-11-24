@@ -13,7 +13,7 @@ const StyledSidenav = styled.div`
         justify-content:center;
         align-items:center ;
         height:96px;
-        background-color:#fff;
+        background-color:var(--header-bg-color);
         box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
         position: fixed; /* Fixes the element to the viewport */
         top: 0; /* Set the distance from the top of the viewport */

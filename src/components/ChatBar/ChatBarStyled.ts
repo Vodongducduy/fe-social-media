@@ -8,7 +8,7 @@ const StyledChatBar = styled.div`
     overflow: auto;
     background-color:var(--body-background);
     .chatbar-content{
-        background-color:#fff;
+        background-color:var(--header-bg-color);
         margin:12px;
         border-radius:  12px;  
         box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2); 
@@ -18,6 +18,8 @@ const StyledChatBar = styled.div`
             padding:10px 0 !important;
             margin:0;
             font-size:16px;
+            
+        color:var(--text-color);
         }
       
         color:var(--text-color);

@@ -24,7 +24,7 @@ const StyledHomePage = styled.div`
                 background-color:var(--body-background);
                 padding-bottom:20px;
                 .request{
-                    background-color:#fff;
+                    background-color:var(--header-bg-color);
                     padding:20px;
                     border-radius:20px;
                     margin-bottom:20px;
@@ -34,7 +34,7 @@ const StyledHomePage = styled.div`
                         h1{
                             font-size:14px;
                             font-weight:bold;
-                            color:#3f4346;
+                            color:var(--text-color);
                         }
                         display: flex;
                         justify-content: space-between;

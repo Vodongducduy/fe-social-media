@@ -5,6 +5,7 @@
   --body_color:black;
   --link_color:navy;
   --text-color:#7A797D;
+  --text-color2:#bcc2c9;
   --header-bg-color:#ffffff;
   --search-bg-color:#eeeeee;
   --toolbar-bg-color:#f5f5f5;
@@ -13,7 +14,11 @@
   --btn-color:white ;
 }
 [data-mode="dark"]{
-  --body-background:#18191A !important;
+  --body-background:#1a2236 !important;
+  --header-bg-color:#293145 !important;
+  --toolbar-bg-color:#1a2236;
+  --text-color2:white;
+  --search-bg-color:#1a2236;
   --body_color:white;
   --link_color:cyan;
   --text-color:white;
